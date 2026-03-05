@@ -14,9 +14,9 @@ build:
   number: 0
   skip: True  # [not win]
   script:
-    - cp *.bat %LIBRARY_BIN%\
-    - cp *.exe %LIBRARY_BIN%\
-    - cp *.xml %LIBRARY_BIN%\
+    - copy /Y "*.bat" "%LIBRARY_BIN%\\"
+    - copy /Y "*.exe" "%LIBRARY_BIN%\\"
+    - copy /Y "*.xml" "%LIBRARY_BIN%\\"
 
 test:
   commands:
